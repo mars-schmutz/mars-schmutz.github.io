@@ -120,9 +120,69 @@ nav ul li a:hover {
     clear: both;
 }
 
+.skills-mobile {
+    display: none;
+}
+
 footer {
     display: block;
     background-color: #495c80;
     color: white;
     padding: 3em;
+}
+
+/**********************
+Media Queries
+**********************/
+
+@media screen and (max-width: 1160px) {
+
+    .column3 img {
+        max-width: 200px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .column3 h1 {
+        font-size: 120%;
+    }
+
+    .column3 img {
+        max-width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .column3 {
+        width: 100%;
+    }
+
+    .column3 h1 {
+        font-size: 150%;
+    }
+
+    .column3 img {
+        max-width: 30%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    /* .skills-desktop {
+        display: none !important;
+    } */
+
+    .column3 {
+        width: 100%;
+    }
+
+    .skills-mobile {
+        display: block;
+    }
+    
 }
