@@ -157,7 +157,15 @@ footer {
     display: block;
     background-color: #495c80;
     color: white;
-    padding: 3em;
+    padding: 1em;
+}
+
+footer i {
+    padding: 0 .25em;
+}
+
+footer a {
+    color: unset;
 }
 
 /**********************
