@@ -5,11 +5,10 @@
         <title>My Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
     <body>
         <div class="banner">
-            <h1 onclick="clicked();">Marshall</h1>
+            <h1>Marshall</h1>
         </div>
         <nav>
             <ul>
@@ -23,29 +22,32 @@
             <p>Some of my skills include web and mobile development and 3D modeling/animation.</p>
         </div>
         <div class="row skills-desktop">
-            <div class="column3" id="swift">
+            <div class="column3" id="web">
                 <h1>WEB DEVELOPMENT</h1>
-                <img src="img/web.png">
+                <img class="skill-img" src="img/web.png">
             </div>
-            <div class="column3" id="android">
+            <div class="column3" id="mobile">
                 <h1>MOBILE DEVELOPMENT</h1>
-                <img src="img/phone.png">
+                <img class="skill-img" src="img/phone.png">
             </div>
             <div class="column3" id="cube">
                 <h1>3D MODELING/ANIMATION</h1>
-                <img src="img/cube.png">
+                <img class="skill-img" src="img/cube_normals.png">
             </div>
         </div>
         <div class="skills-mobile">
             <img src="img/web.png">
             <img src="img/phone.png">
-            <img src="img/cube.png">
+            <img src="img/cube_normals.png">
         </div>
-        <h1>Take a look at some of my work</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="highlights">
+            <h1>Take a look at some of my work</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
         <footer>
             <p>footer stuff here</p>
         </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="js/scripts.js"></script>
     </body>
 </html>

@@ -36,6 +36,11 @@ body {
     color: #495c80;
 }
 
+.h1 {
+    font-family: Helvetica Neue-Thin;
+    text-transform: uppercase;
+}
+
 .banner h1 {
     font-family: Helvetica Neue-Thin;
     text-transform: uppercase;
@@ -84,6 +89,7 @@ nav ul li a:hover {
 .intro h1 {
     font-family: Helvetica Neue-Light;
     text-transform: uppercase;
+    font-size: 3rem;
 }
 
 .intro p {
@@ -106,11 +112,29 @@ nav ul li a:hover {
     max-width: 300px;
 }
 
-#swift, #cube {
+#web img, #mobile img, #cube img {
+    width: 75%;
+    height: 75%;
+    padding: 1em;
+}
+
+#web, #mobile, #cube {
+    overflow: hidden;
+}
+
+#web img, #mobile img, #cube img {
+    transition: transform .5s ease;
+}
+
+#web:hover img, #mobile:hover img, #cube:hover img {
+    transform: scale(1.15);
+}
+
+#web, #cube {
     background-color: #91b7ff;
 }
 
-#android {
+#mobile {
     background-color: #7493cc;
 }
 
@@ -122,6 +146,11 @@ nav ul li a:hover {
 
 .skills-mobile {
     display: none;
+}
+
+.highlights h1 {
+    font-family: Helvetica Neue-Light;
+    text-transform: uppercase;
 }
 
 footer {
