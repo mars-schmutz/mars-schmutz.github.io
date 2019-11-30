@@ -169,6 +169,26 @@ footer a {
 }
 
 /**********************
+Portfolio Styles
+**********************/
+
+.portfolio-grid {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 1em;
+    grid-column-gap: 1em;
+    padding: 1em;
+    height: 100%;
+}
+
+.p-grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 18pt;
+    text-align: center;
+}
+
+/**********************
 Media Queries
 **********************/
 
