@@ -174,11 +174,11 @@ Portfolio Styles
 
 .portfolio-grid {
     display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: auto auto auto;
-    grid-row-gap: 1em;
-    grid-column-gap: 1em;
-    padding: 1em;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 2em;
+    grid-column-gap: 2em;
+    padding: 2em;
     height: 100%;
 }
 
@@ -186,7 +186,78 @@ Portfolio Styles
     background-color: rgba(255, 255, 255, 0.8);
     font-size: 18pt;
     text-align: center;
+    border: 1px solid black;
 }
+
+.p-grid-item:hover {
+    cursor: pointer;
+}
+
+.img-container {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.6);
+}
+
+.lightbox div {
+    background: #495c80;
+    padding: 1em;
+    transform: translateY(5%);
+    width: 90%;
+    margin: 0 auto;
+}
+
+.lightbox-close {
+    font-size: 6rem;
+    position: absolute;
+    z-index: 12;
+    right: 2%;
+    top: -0.5%;
+}
+
+.lightbox-close:hover {
+    cursor: pointer;
+}
+
+.lightbox img {
+    /* transform: translateY(25%); */
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+}
+
+#room-combo {
+    display: none;
+    
+    /* position: fixed;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.6); */
+}
+
+/* #room-combo:first-child {
+    background: #495c80;
+    padding: 1em;
+    width: 90%;
+    transform: translateY(5%);
+    margin: 0 auto;
+} */
 
 /**********************
 Media Queries

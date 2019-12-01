@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/9d72bb5bed.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link rel="stylesheet" href="css/BeerSlider.css">
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
@@ -19,9 +20,15 @@
             </ul>
         </nav>
         <div class="portfolio-grid">
-            <div class="p-grid-item">1</div>
-            <div class="p-grid-item">2</div>
-            <div class="p-grid-item">3</div>
+            <div class="p-grid-item">
+                <div data-image="canyon" onclick="displayImg(this);" class="img-container" style="background-image: url('img/portfolio/canyon.png');"></div>
+            </div>
+            <div class="p-grid-item">
+                <div data-image="moody-room" onclick="displayImg(this);" class="img-container" style="background-image: url('img/portfolio/moodyRoom.png');"></div>
+            </div>
+            <div class="p-grid-item">
+                    <div data-image="room-combo" onclick="displayCmp(this);" class="img-container" style="background-image: url('img/portfolio/roomCombo.png');"></div>
+            </div>
             <div class="p-grid-item">4</div>
             <div class="p-grid-item">5</div>
             <div class="p-grid-item">6</div>
@@ -29,11 +36,55 @@
             <div class="p-grid-item">8</div>
             <div class="p-grid-item">9</div>
         </div>
+
+        <!-- Lightboxes for portfolio grid -->
+        <div class="lightbox" id="canyon">
+            <div class="lb-image">
+                <span class="lightbox-close">&times;</span>
+                <img src="img/portfolio/canyon.png">
+            </div>
+        </div>
+
+        <div class="lightbox" id="moody-room">
+            <div class="lb-image">
+                <span class="lightbox-close">&times;</span>
+                <img src="img/portfolio/moodyRoom.png">
+            </div>
+        </div>
+
+        <div class="lightbox" id="room-combo">
+            <div class="lb-image">
+                <span class="lightbox-close">&times;</span>
+                <img src="img/portfolio/roomCombo.png">
+            </div>
+        </div>
+
+        <!-- <div id='room-combo'>
+            <div>
+                <span class="lightbox-close">&times;</span>
+                <div class="beer-slider room-combo" id="beer-slider">
+                    <img src="img/portfolio/room.png">
+                    <div class="beer-reveal">
+                        <img src="img/portfolio/roomDark.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="beer-slider room-combo" id="beer-slider2">
+                <img src="img/portfolio/room.png">
+                <div class="beer-reveal">
+                    <img src="img/portfolio/roomDark.png">
+                </div>
+            </div> -->
+
         <footer>
             <a target="_blank" href="https://www.instagram.com/_twistedbagel/"><i class="fab fa-3x fa-instagram"></i></a>
             <a target="_blank" href="https://www.artstation.com/twistedbagel"><i class="fab fa-3x fa-artstation"></i></a>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/BeerSlider.js"></script>
         <script src="js/scripts.js"></script>
+        <script src="js/imgCompare.js"></script>
     </body>
 </html>
