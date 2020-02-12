@@ -25,16 +25,6 @@ FONTS
 /**********************
 Index Styles
 **********************/
-.h1 {
-    font-family: Helvetica Neue-Thin;
-    text-transform: uppercase;
-}
-
-.banner h1 {
-    font-family: Helvetica Neue-Thin;
-    text-transform: uppercase;
-    font-size: 5rem;
-}
 
 body {
     margin: 0 auto;
@@ -44,6 +34,17 @@ body {
     background-color: #dee9ff;
     /* other options: 91b7ff dee9ff */
     color: #495c80;
+}
+
+.h1 {
+    font-family: Helvetica Neue-Thin;
+    text-transform: uppercase;
+}
+
+.banner h1 {
+    font-family: Helvetica Neue-Thin;
+    text-transform: uppercase;
+    font-size: 5rem;
 }
 
 nav {
@@ -56,7 +57,7 @@ nav ul {
     list-style-type: none;
     margin: 0 auto;
     width: auto;
-    padding: 1.4%;
+    padding: 1.5%;
 }
 
 nav ul li {
@@ -83,39 +84,7 @@ nav ul li a:hover {
     background-repeat: no-repeat;
 }
 
-section {
-    margin-left: 7em;
-    margin-right: 7em;
-}
-
-.column2 {
-    width: 50%;
-    float: left;
-    padding-top: 1em;
-    padding-bottom: 1.5em;
-}
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-.profile {
-    width: 70%;
-    height: 70%;
-    margin-right: 3em;
-    float: right;
-}
-
-.bio {
-    text-align: left;
-    /* width: 90%; */
-}
-
-ul {
-    text-align: left;
-}
+.intro {}
 
 .intro h1 {
     font-family: Helvetica Neue-Light;
