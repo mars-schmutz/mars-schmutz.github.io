@@ -39,7 +39,7 @@ registerBtn.onclick = function() {
     data += '&email=' + encodeURIComponent(email);
     data += '&pass=' + encodeURIComponent(pass);
 
-    fetch("http://malachite-watch.herokuapp.com/users", {
+    fetch("https://malachite-watch.herokuapp.com/users", {
         method: 'POST',
         credentials: "include",
         body: data,
@@ -66,7 +66,7 @@ loginBtn.onclick = function() {
     var data = 'email=' + encodeURIComponent(uName);
     data += '&password=' + encodeURIComponent(pass);
 
-    fetch("http://malachite-watch.herokuapp.com/sessions", {
+    fetch("https://malachite-watch.herokuapp.com/sessions", {
         method: "POST",
         credentials: "include",
         body: data,
@@ -89,7 +89,7 @@ loginBtn.onclick = function() {
 }
 
 function deleteOfficerOnServer(oID) {
-    fetch('http://malachite-watch.herokuapp.com/officers/' + oID, {
+    fetch('https://malachite-watch.herokuapp.com/officers/' + oID, {
         method: "DELETE",
         credentials: 'include'
     }).then(function(response) {
@@ -110,7 +110,7 @@ updateMember.onclick = function() {
     data += '&ship=' + encodeURIComponent(officerShip);
     data += '&species=' + encodeURIComponent(officerSpecies);
 
-    fetch('http://malachite-watch.herokuapp.com/officers/' + editID, {
+    fetch('https://malachite-watch.herokuapp.com/officers/' + editID, {
         method: "PUT",
         credentials: "include",
         body: data,
@@ -163,7 +163,7 @@ addBtn.onclick = function() {
     data += '&ship=' + encodeURIComponent(officerShip);
     data += '&species=' + encodeURIComponent(officerSpecies);
 
-    fetch('http://malachite-watch.herokuapp.com/officers', {
+    fetch('https://malachite-watch.herokuapp.com/officers', {
         method: "POST",
         credentials: "include",
         body: data,
@@ -178,7 +178,7 @@ addBtn.onclick = function() {
 }
 
 function loadOfficers() {
-    fetch('http://malachite-watch.herokuapp.com/officers', {
+    fetch('https://malachite-watch.herokuapp.com/officers', {
         credentials: "include"
     }).then(function(response) {
         response.json().then(function(officersFromServer) {
@@ -246,7 +246,7 @@ function displayDash() {
     dash.classList.remove("hidden");
 
     var name = document.querySelector("#user");
-    // fetch("http://localhost:8080/sessions", {
+    // fetch("https://localhost:8080/sessions", {
     //     credentials: 'include',
     // }).then(function(response) {
     //     console.log("The response to get user name", response);
@@ -255,7 +255,7 @@ function displayDash() {
 
 function handleLogInSwitch() {
     console.log('called');
-    fetch("http://malachite-watch.herokuapp.com/officers", {
+    fetch("https://malachite-watch.herokuapp.com/officers", {
         credentials: "include"
     }).then(function(response) {
         console.log(response);
