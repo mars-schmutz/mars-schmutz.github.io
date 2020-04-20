@@ -1,0 +1,155 @@
+.hidden {
+    display: none;
+}
+
+#addBtn, #updateMember, #loginBtn, #registerBtn {
+    background-color: #6699ff;
+    padding: 1em;
+    text-transform: uppercase;
+    width: 15%;
+    border-radius: 50px;
+}
+
+#addBtn:hover, #updateMember:hover, #loginBtn:hover, #registerBtn:hover {
+    background-color: #99bbff;
+    cursor: pointer;
+}
+
+body {
+    background-color: #0f0f0f;
+}
+
+.container {
+    color: #eee;
+    font-family: helvetica, serif;
+    font-weight: 300;
+    margin: 1em auto;
+}
+
+#header {
+    position: relative;
+    margin: 0.5rem 0 0 0;
+    background-color: rgba(153, 153, 255, 0.62);
+    border-radius: 0 0 0 1.62rem;
+    padding-bottom: 0.5rem;
+}
+
+#header div {
+    position: relative;
+    z-index: 2;
+    background: #0f0f0f;
+    width: 92%;
+    min-height: 100px;
+    margin-left: auto;
+    border-radius: 0 0 0 1rem;
+    padding-top: 2em;
+    text-transform: uppercase;
+}
+
+.contentWrapper {
+    z-index: 2;
+    position: relative;
+    margin: 0.5rem 0 0 0;
+    background-color: rgba(153, 153, 255, 0.62);
+    border-radius: 1.62rem 0 0 1.62rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.contentWrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 1.1rem;
+    width: 24%;
+    width: calc(24% - 1rem);
+    background: rgba(204, 102, 204, 0.25);
+    border-left: 0.5rem solid #0f0f0f;
+    border-right: 0.5rem solid #0f0f0f;
+    transform: translateX(-100%);
+}
+
+.contentWrapper::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 9.5%;
+    left: 0;
+    width: 10%;
+    height: 30%;
+    height: calc(30% - 1rem);
+    background: rgba(204, 102, 204, 0.25);
+    border-top: 0.5rem solid #0f0f0f;
+    border-bottom: 0.5rem solid #0f0f0f;
+}
+
+.contentContainer {
+    position: relative;
+    background-color: #0f0f0f;
+    width: 95%;
+    border-radius: 1rem 0 0 1rem;
+    margin: 0 0 0 auto;
+    padding: 1rem;
+    min-height: 300px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+input {
+    font-size: 1.4rem;
+    margin: 0.2em 1em 0.2em 3em;
+    background-color: rgba(153, 153, 255, 0.62);
+    border: none;
+    color: white;
+    padding: 0.4em;
+}
+
+input:focus {
+    background-color: rgba(204, 102, 204, 0.45);
+}
+
+#officers-list {
+    list-style: none;
+}
+
+#officers-list li {
+    border: solid 5px rgb(123, 105, 170);
+    padding: 0.5em;
+    margin: 0.3em;
+    width: 30%;
+}
+
+#officers-list li > * {
+    padding: 0.1em;
+}
+
+.name {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+
+.rank {
+    font-size: 1.4rem;
+}
+
+.station {
+    font-size: 1.2rem;
+}
+
+.updateBtn, .deleteBtn {
+    background-color: #6699ff;
+    padding: 0.5em;
+    text-transform: uppercase;
+    width: 30%;
+    border-radius: 50px;
+    border: none;
+    margin: 0 0.5em;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.updateBtn:hover, .deleteBtn:hover {
+    background-color: #99bbff;
+    cursor: pointer;
+}

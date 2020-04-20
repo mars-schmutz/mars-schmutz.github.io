@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='styles.css'>
+    <title>Starfleet Officer Database</title>
+</head>
+<body>
+    <div class="container">
+        <div id="header">
+            <div>
+                <h1>Starfleet Officer Database</h1>
+                <h3 id='whoami'></h3>
+            </div>
+        </div>
+        <div id="userView" class="contentWrapper">
+            <div id='register' class="register contentContainer">
+                <label>First Name</label>
+                <input type='text' id='fName'>
+                <label>Last Name</label>
+                <input type='text' id='lName'>
+                <label>Email</label>
+                <input type='text' id='email'>
+                <label>Password</label>
+                <input type='text' id='pass'>
+                <div id="registerBtn">Register</div>
+            </div>
+            <div class='login contentContainer'>
+                <label>Username</label>
+                <input type='text' id='username'>
+                <label>Password</label>
+                <input type='password' id='password'>
+                <div id='loginBtn'>Login</div>
+            </div>
+        </div>
+        <div id='dash' class="contentWrapper hidden">
+            <div class="contentContainer">
+                <label>Name</label>
+                <input type='text' id='officerName' required><br>
+                <label>Rank</label>
+                <input type='text' id='officerRank' required><br>
+                <label>Station</label>
+                <input type='text' id='officerStation' required><br>
+                <label>Ship</label>
+                <input type='text' id='officerShip' required><br>
+                <label>Species</label>
+                <input type='text' id='officerSpecies' required><br>
+                <div id='addBtn'>Add Officer</div>
+                <div id='updateMember' class='hidden'>Commit</div>
+                <p id='status'></p>
+                <ul id='officers-list'></ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src='scripts.js'></script>
+</html
