@@ -74,12 +74,12 @@ loginBtn.onclick = function() {
             "Content-Type": "application/x-www-form-urlencoded"
         }
     }).then(function(response) {
-        console.log('login response here:');
-        console.log(response);
+        // console.log('login response here:');
+        // console.log(response);
         if (response.status == 201) {
             userView.classList.add("hidden")
             dash.classList.remove('hidden');
-            console.log(response);
+            // console.log(response);
             handleLogInSwitch();
         } else {
             alert("Your username or password is incorrect! Try again");
@@ -254,17 +254,17 @@ function displayDash() {
 }
 
 function handleLogInSwitch() {
-    console.log('called');
+    // console.log('called');
     fetch("https://malachite-watch.herokuapp.com/officers", {
         credentials: "include"
     }).then(function(response) {
-        console.log(response);
+        // console.log(response);
         if (response.status == 200) {
             // show dash view
             displayDash();
             loadOfficers();
         } else if (response.status == 401) {
-            console.log("you don't have access to this");
+            console.log("shouldn't have access here");
         }
     })
 }
