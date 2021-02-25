@@ -168,6 +168,14 @@ footer a {
     color: unset;
 }
 
+.gen-btn {
+    border-radius: 10px;
+    background-color: #495c80;
+}
+.gen-btn:hover {
+    cursor: pointer;
+}
+
 /**********************
 Portfolio Styles
 **********************/
