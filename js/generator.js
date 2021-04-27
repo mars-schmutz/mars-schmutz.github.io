@@ -1,4 +1,3 @@
-// Name generator for posse page
 var adj = ["Bushwackin","Contemptable","Courageous","Lawless","Nefarious","Notorious",
             "Persistent","Prospecting","Quarrellsome","Rebellious","Reckless","Unscrupulous","Unorthodox",
             "Villainous","Weary","Zealous"]
