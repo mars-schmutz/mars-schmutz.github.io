@@ -9,9 +9,8 @@ function isInView(e) {
     return ((eBottom <= docBottom) && (eTop >= docTop));
 }
 
-// Lightboxes for portfolio page
+// modals for portfolio page
 function displayImg(e) {
-    // console.log(e.dataset.image);
     var lightBox = $("#" + e.dataset.image);
     lightBox.css('display', 'block');
 }
@@ -32,9 +31,7 @@ $(document).ready(function() {
             if (isInView(this) === true) {
                 $(this).addClass('fadeInLeft');
             }
-            // console.log("foreach fired");
         });
-        // console.log("window scrolled");
     });
 });
 
